@@ -1,0 +1,71 @@
+*{
+ margin: 0;
+ padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.titulo{
+    height: 350px;
+    width: 100%;
+    background-image: url("assets/img/design1_image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+ 
+}
+
+h1{
+   text-align: left;
+   color: yellow;
+    
+}
+
+
+h2{
+    background-color: black;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: aliceblue;
+    padding: 5px;
+    
+}
+.logohockey{
+    position: absolute;
+    margin-top: -150px;
+    width:200px;
+    height: 200px; 
+    right: 10%;
+    background-color: white; 
+    }
+
+nav{
+    display: inline-block;
+    
+}
+
+a {
+    padding: 20px;
+    display: flex;
+    margin: 30px;
+    
+}  
+
+.contenido{
+    position: absolute;
+    float: left;
+    margin-top: 40px;
+    display:inline;
+}
+  
+
+ 
+p {
+    width: 80%;
+}
+  
