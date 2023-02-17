@@ -1,71 +1,273 @@
 *{
  margin: 0;
  padding: 0;
-box-sizing: border-box;
-}
+ box-sizing: border-box;
+ font-family: "Comic Sans MS", "Comic Sans";
 
+/* outline: 1px solid white;*/
+}
 body{
-    font-family: "Comic Sans MS", "Comic Sans";
+    min-height: 100vh;
+    box-shadow:  #ecd32b;
+    
+}
+ 
+.conteinerindex{
+  /* border:2px solid black;*/
+   margin: auto;
+   min-height: 10vh;
+   /*background-color: black;*/
+   background-color: black;
+   display:flex;
+   flex-direction: row-reverse;
+   flex-wrap: wrap;
+   gap: 1rem;
+   padding: 1rem;
+   justify-content:center;
+   align-items: flex-end;
+
+}
+   
+.logo{
+    width: 90px;
+    height:90px;  
 }
 
 .titulo{
-    height: 350px;
-    width: 100%;
-    background-image: url("assets/img/design1_image1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover
- 
+    height: 90px; 
+    /*box-shadow: 10px 5px 5px rgb(68, 62, 62);  */
 }
-
 h1{
-   text-align: left;
-   color: yellow;
-    
+   
+    color: yellow;
+    text-shadow:3px 3px 3px ;
+    text-align: justify;
+    font-size: 3rem;
 }
-
-
 h2{
-    background-color: black;
-    margin-top: 5px;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    color: aliceblue;
-    padding: 5px;
-    
+   /* flex-grow: .5;*/
+    color: #ecd32b;
+    text-shadow:2px 2px 2px ;
+   /* font-size: 2rem;*/
 }
-.logohockey{
-    position: absolute;
-    margin-top: -150px;
-    width:200px;
-    height: 200px; 
-    right: 10%;
-    background-color: white; 
-    }
-
-nav{
-    display: inline-block;
-    
+h3{
+    color: #695102;
+    text-shadow:2px 2px 2px ;
+    /*background-color:yellow;*/
 }
-
-a {
-    padding: 20px;
-    display: flex;
-    margin: 30px;
-    
-}  
-
-.contenido{
-    position: absolute;
-    float: left;
-    margin-top: 40px;
-    display:inline;
-}
-  
-
+h4{
+    color: #363232;
+font-size: 0.7rem;
+text-decoration: none;
  
-p {
-    width: 80%;
 }
+
+.contenedornavegador{
+background-color: black;
+margin:auto;
+display:flex;
+justify-content:space-around;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 1rem;
+padding: 1rem;
+
+}
+nav{
+    display:inline-block;
+    flex-direction: row;
+    gap: 0.5rem;
   
+}
+nav a{
+background-color: yellow;
+height: 2rem;
+width: 10rem;
+display:inline-flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+font-size: 1rem;
+text-decoration: none;
+border-radius: 10px;
+color: #695102;
+}
+
+a:hover{
+    background-color: #695102;
+   
+}
+
+.banner1{
+    width: 100%;
+    height:350px ;
+    
+    
+}
+
+main{
+/*height: 85vh;*/
+width: 100%;
+background-image: url(assets/img/fondohielo.jpg);
+display: flex;
+justify-content: center;
+flex-wrap: wrap;}
+
+
+.contenedormain{
+height: 500px;
+width: 700px;
+/*background-color:rgba(28, 227, 220, 0.304);*/
+display:flex;
+flex-direction:column;
+justify-content:center;
+flex-wrap: wrap;
+align-content: center;
+gap: 0.5rem;
+
+
+
+}
+
+.tarjeta1, .tarjeta2, .tarjeta3,.hockerplay{
+height: 100px;
+width: 200px;
+display: flex;
+gap: 0.5rem;
+flex-direction:column;
+justify-content:space-between;
+
+
+}
+
+.contenedormain.hockerplay{
+    width: 30%;
+}
+.tarjeta1, .tarjeta2, .tarjeta3{
+    width:70% ;
+    display: flex;
+flex-direction:row;
+justify-content:space-between;
+/*flex-wrap: wrap;*/
+
+}
+
+.hockerplay{
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.footer1{
+    background-color: black;
+    width: 100%;
+    padding: 1rem;
+   min-height:5vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.mapa{
+    
+    height: 150px;
+    width: 150px;
+ /*display: block;
+flex-direction: column;*/
+    
+}
+
+.formcontainer{
+    /*background-image: url(assets/img/Logo_Mighty_ducks-01.png);
+    opacity: .5;*/
+    width:500px;
+    height: 700px;
+    display:inline-block; 
+   
+}
+
+form{
+    background-color: aliceblue;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    /*font-size: 0.7rem;*/
+    border:2px solid orange ;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    padding: 2rem;
+}
+fieldset{
+    border:0.5px solid orange ;
+   
+}
+
+
+
+.caja1{
+    height: 150px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.conteinerrules{
+    display: flex;
+
+}
+
+.registroconteiner{
+    font-size: 0.9rem;
+    display: block;
+    width: 700px;
+justify-content: center;
+
+}
+table{
+    display:inline-block;
+    justify-content: center;
+    text-align: center;
+}
+    
+ul li{
+    list-style-type: none;
+    list-style-position:inside;
+}
+
+li li{
+    list-style-type:lower-latin;
+    list-style-position:inside;
+
+}
+.contact{
+    height: 400px;
+    display:block;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+
+.ginformation{
+height: 700px;
+
+}
+tbody{
+    align-items: center;
+}
+
+/* desde hasta*/
+@media (max-width:960px){
+    main{
+        background-color:red;
+    }
+}
+@media (max-width:768px){
+    main{
+        background-colo:blue;
+    }
+}
